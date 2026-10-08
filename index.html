@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0A2540">
+<title>Wisata dan Ziarah Wali Naik Bus, Harga Jelas | Nama Travel Anda</title>
+<meta name="description" content="Paket wisata dan ziarah wali dengan bus untuk keluarga, pengajian, dan instansi. Itinerary jelas, harga transparan. Konsultasi gratis via WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Instrument+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="config.js" defer></script>
+</head>
+<body>
+
+<div class="hero">
+  <div class="wrap">
+    <header class="top">
+      <span class="logo">Nama Travel Anda</span>
+      <a class="btn ghost" data-wa="Halo, saya mau tanya paket perjalanan.">Chat WhatsApp</a>
+    </header>
+    <div class="grid">
+      <div>
+        <h1>Ziarah wali dan wisata naik bus, dijemput sampai diantar pulang.</h1>
+        <p class="lead">Cocok untuk rombongan keluarga, majelis taklim, pengajian, sekolah, dan instansi. Rute, jadwal, dan harga kami tulis jelas sebelum Anda mendaftar.</p>
+        <ul>
+          <li>Bus dan sopir berpengalaman untuk perjalanan jauh</li>
+          <li>Waktu sholat dan istirahat diatur di jadwal</li>
+          <li>Harga tertulis, tanpa biaya tersembunyi</li>
+        </ul>
+      </div>
+
+      <div class="pass" id="daftar">
+        <div class="pass-head"><span>Tiket konsultasi gratis</span><span>Isi 1 menit</span></div>
+        <form id="lead-form" novalidate>
+          <label>Nama lengkap<input name="nama" autocomplete="name" enterkeyhint="next" required></label>
+          <label>Nomor WhatsApp<input name="hp" type="tel" inputmode="tel" autocomplete="tel" enterkeyhint="send" placeholder="08xxxxxxxxxx" required></label>
+          <label>Tujuan
+            <select name="tujuan">
+              <option>Ziarah Wali</option>
+              <option>Wisata Bus</option>
+              <option>Sewa Bus Rombongan</option>
+            </select>
+          </label>
+          <label>Kota penjemputan<input name="jemput" autocomplete="address-level2" enterkeyhint="next" placeholder="Contoh: kota atau kecamatan"></label>
+          <div class="row2">
+            <label>Jumlah orang<input name="pax" type="number" inputmode="numeric" min="1" value="40"></label>
+            <label>Rencana berangkat
+              <select name="bulan">
+                <option>Bulan ini</option><option>1–2 bulan lagi</option><option>3–6 bulan lagi</option><option>Belum pasti</option>
+              </select>
+            </label>
+          </div>
+          <button class="btn" type="submit">Kirim dan lanjut ke WhatsApp</button>
+          <p id="form-msg" role="status"></p>
+          <small>Data hanya dipakai untuk menghubungi Anda terkait paket ini.</small>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="s" id="paket">
+  <div class="wrap">
+    <h2>Pilihan perjalanan</h2>
+    <p>Contoh isi, ganti dengan rute dan harga Anda yang sebenarnya. Rute dan jadwal bisa disesuaikan dengan rombongan.</p>
+    <div class="pkg">
+      <div class="pkg-row">
+        <div><h3>Ziarah Wali Songo, Jawa Timur</h3><p>Makam di Jawa Timur seperti Sunan Ampel, Sunan Giri, Sunan Drajat, dan Sunan Bonang. Perjalanan 2 hari 1 malam.</p></div>
+        <div class="price">Rp 000.000<small>per orang</small></div>
+        <a class="btn" data-wa="Halo, saya mau tanya paket Ziarah Wali Songo Jawa Timur.">Tanya paket ini</a>
+      </div>
+      <div class="pkg-row">
+        <div><h3>Ziarah Wali Songo, Jawa Timur sampai Jawa Tengah</h3><p>Rute diperluas ke Demak, Kudus, dan sekitarnya. Perjalanan 3 hari 2 malam.</p></div>
+        <div class="price">Rp 000.000<small>per orang</small></div>
+        <a class="btn" data-wa="Halo, saya mau tanya paket Ziarah Wali Songo Jatim dan Jateng.">Tanya paket ini</a>
+      </div>
+      <div class="pkg-row">
+        <div><h3>Wisata bus keluarga atau instansi</h3><p>Pilih destinasi wisata, kami atur rute, waktu istirahat, dan tiket masuk.</p></div>
+        <div class="price">Rp 000.000<small>per orang</small></div>
+        <a class="btn" data-wa="Halo, saya mau tanya paket wisata bus.">Tanya paket ini</a>
+      </div>
+      <div class="pkg-row">
+        <div><h3>Sewa bus untuk rombongan</h3><p>Sudah punya rute sendiri? Kami sediakan bus dan sopir. Harga per bus, sesuai jarak dan lama sewa.</p></div>
+        <div class="price">Hubungi kami<small>harga per bus</small></div>
+        <a class="btn" data-wa="Halo, saya mau minta penawaran sewa bus rombongan.">Minta penawaran</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="s alt">
+  <div class="wrap">
+    <h2>Yang Anda dapat</h2>
+    <div class="why">
+      <div><h3>Jadwal ibadah diperhatikan</h3><p>Waktu sholat, istirahat, dan makan dijadwalkan di itinerary, jadi rombongan tidak terburu-buru di makam.</p></div>
+      <div><h3>Bus dan sopir berpengalaman</h3><p>Tulis jenis bus, kapasitas, dan fasilitasnya di sini, misalnya AC, reclining seat, dan audio.</p></div>
+      <div><h3>Jemput sesuai kota Anda</h3><p>Titik jemput dan jam berangkat disepakati sebelum perjalanan, dan dikirim tertulis.</p></div>
+      <div><h3>Pembayaran bertahap</h3><p>DP dulu, pelunasan menjelang berangkat. Rinciannya tertulis di invoice.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="s">
+  <div class="wrap">
+    <h2>Kata pelanggan</h2>
+    <blockquote>Ganti dengan testimoni asli. Sebutkan nama, kota, dan paket yang diambil.<cite>Nama, Kota, Ziarah Wali Songo</cite></blockquote>
+    <blockquote>Testimoni kedua, sebaiknya yang menyebut hal spesifik, misalnya ketepatan jadwal.<cite>Nama, Kota, Wisata Bus</cite></blockquote>
+  </div>
+</section>
+
+<section class="s alt">
+  <div class="wrap">
+    <h2>Pertanyaan umum</h2>
+    <details><summary>Berapa minimal peserta untuk berangkat?</summary><p>Isi sesuai kebijakan Anda, misalnya minimal 1 bus penuh atau bergabung dengan rombongan lain.</p></details>
+    <details><summary>Fasilitas bus apa saja?</summary><p>Tulis jenis bus, kapasitas, dan fasilitasnya.</p></details>
+    <details><summary>Apakah ada pembimbing ziarah?</summary><p>Jelaskan apakah ada pembimbing doa dan tahlil, serta bahasa yang dipakai.</p></details>
+    <details><summary>Berapa DP dan kapan pelunasan?</summary><p>Isi sesuai kebijakan Anda, misalnya DP 30% dan pelunasan H-7.</p></details>
+    <details><summary>Bisa jemput dari kota saya?</summary><p>Tulis area penjemputan dan biaya tambahan jika ada.</p></details>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap">
+    <h2>Rencanakan perjalanan rombongan Anda</h2>
+    <p>Ceritakan tujuan, jumlah orang, dan kota penjemputan. Kami kirim rute dan rincian harganya.</p>
+    <a class="btn" data-wa="Halo, saya mau konsultasi perjalanan bus untuk rombongan.">Chat WhatsApp sekarang</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <a href="privacy.html">Kebijakan privasi</a>
+    <span>© <span id="year"></span> Nama Travel Anda. Alamat kantor dan nomor izin usaha diisi di sini.</span>
+  </div>
+</footer>
+
+<a class="fab" data-wa="Halo, saya mau tanya paket perjalanan.">WhatsApp</a>
+<nav class="bar" aria-label="Hubungi kami">
+  <a class="btn ghost" href="#daftar">Isi formulir</a>
+  <a class="btn wa" data-wa="Halo, saya mau tanya paket perjalanan.">Chat WhatsApp</a>
+</nav>
+<script src="script.js" defer></script>
+</body>
+</html>
