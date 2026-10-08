@@ -82,5 +82,33 @@
     });
   }
 
+  // ---- Filter paket ----
+  var chips = document.querySelectorAll(".chip");
+  chips.forEach(function (c) {
+    c.addEventListener("click", function () {
+      var f = c.getAttribute("data-filter");
+      chips.forEach(function (x) { x.classList.toggle("on", x === c); });
+      document.querySelectorAll(".pkg-row").forEach(function (r) {
+        r.hidden = !(f === "all" || r.getAttribute("data-kat") === f);
+      });
+    });
+  });
+
+  // ---- Galeri: perbesar foto ----
+  var lb = document.getElementById("lightbox");
+  if (lb && lb.showModal) {
+    document.querySelectorAll(".gallery figure").forEach(function (fig) {
+      fig.addEventListener("click", function () {
+        var im = fig.querySelector("img");
+        if (!im) return;
+        document.getElementById("lb-img").src = im.src;
+        document.getElementById("lb-img").alt = im.alt;
+        document.getElementById("lb-cap").textContent = im.alt;
+        lb.showModal();
+      });
+    });
+    lb.addEventListener("click", function (e) { if (e.target === lb) lb.close(); });
+  }
+
   document.getElementById("year").textContent = new Date().getFullYear();
 })();

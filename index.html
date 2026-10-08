@@ -63,32 +63,78 @@
 
 <section class="s" id="paket">
   <div class="wrap">
-    <h2>Pilihan perjalanan</h2>
-    <p>Contoh isi, ganti dengan rute dan harga Anda yang sebenarnya. Rute dan jadwal bisa disesuaikan dengan rombongan.</p>
+    <h2>Daftar paket</h2>
+    <p>Contoh isi, ganti dengan rute, harga, dan fasilitas Anda. Rute bisa disesuaikan dengan rombongan.</p>
+    <div class="chips" role="group" aria-label="Filter paket">
+      <button type="button" class="chip on" data-filter="all">Semua</button>
+      <button type="button" class="chip" data-filter="ziarah">Ziarah wali</button>
+      <button type="button" class="chip" data-filter="wisata">Wisata bus</button>
+      <button type="button" class="chip" data-filter="sewa">Sewa bus</button>
+    </div>
     <div class="pkg">
-      <div class="pkg-row">
-        <div><h3>Ziarah Wali Songo, Jawa Timur</h3><p>Makam di Jawa Timur seperti Sunan Ampel, Sunan Giri, Sunan Drajat, dan Sunan Bonang. Perjalanan 2 hari 1 malam.</p></div>
+      <div class="pkg-row" data-kat="ziarah">
+        <div><h3>Ziarah Wali Songo Jawa Timur</h3><p class="meta">2 hari 1 malam</p><p>Sunan Ampel, Sunan Giri, Sunan Drajat, dan Sunan Bonang.</p><p class="inc">Termasuk: bus, penginapan, makan, pembimbing</p></div>
         <div class="price">Rp 000.000<small>per orang</small></div>
         <a class="btn" data-wa="Halo, saya mau tanya paket Ziarah Wali Songo Jawa Timur.">Tanya paket ini</a>
       </div>
-      <div class="pkg-row">
-        <div><h3>Ziarah Wali Songo, Jawa Timur sampai Jawa Tengah</h3><p>Rute diperluas ke Demak, Kudus, dan sekitarnya. Perjalanan 3 hari 2 malam.</p></div>
+      <div class="pkg-row" data-kat="ziarah">
+        <div><h3>Ziarah Wali Songo Jawa Timur dan Jawa Tengah</h3><p class="meta">3 hari 2 malam</p><p>Rute Jawa Timur ditambah Demak dan Kudus (Sunan Kalijaga, Sunan Kudus, Sunan Muria).</p><p class="inc">Termasuk: bus, penginapan, makan, pembimbing</p></div>
         <div class="price">Rp 000.000<small>per orang</small></div>
         <a class="btn" data-wa="Halo, saya mau tanya paket Ziarah Wali Songo Jatim dan Jateng.">Tanya paket ini</a>
       </div>
-      <div class="pkg-row">
-        <div><h3>Wisata bus keluarga atau instansi</h3><p>Pilih destinasi wisata, kami atur rute, waktu istirahat, dan tiket masuk.</p></div>
+      <div class="pkg-row" data-kat="ziarah">
+        <div><h3>Ziarah Wali Songo Lengkap</h3><p class="meta">4 hari 3 malam</p><p>Jawa Timur, Jawa Tengah, dan Cirebon (Sunan Gunung Jati).</p><p class="inc">Termasuk: bus, penginapan, makan, pembimbing</p></div>
         <div class="price">Rp 000.000<small>per orang</small></div>
-        <a class="btn" data-wa="Halo, saya mau tanya paket wisata bus.">Tanya paket ini</a>
+        <a class="btn" data-wa="Halo, saya mau tanya paket Ziarah Wali Songo Lengkap.">Tanya paket ini</a>
       </div>
-      <div class="pkg-row">
-        <div><h3>Sewa bus untuk rombongan</h3><p>Sudah punya rute sendiri? Kami sediakan bus dan sopir. Harga per bus, sesuai jarak dan lama sewa.</p></div>
+      <div class="pkg-row" data-kat="wisata">
+        <div><h3>Malang dan Batu</h3><p class="meta">2 hari 1 malam</p><p>Wisata keluarga di Malang dan Batu, cocok untuk anak dan lansia.</p><p class="inc">Termasuk: bus, penginapan, tiket wisata, makan</p></div>
+        <div class="price">Rp 000.000<small>per orang</small></div>
+        <a class="btn" data-wa="Halo, saya mau tanya paket wisata Malang dan Batu.">Tanya paket ini</a>
+      </div>
+      <div class="pkg-row" data-kat="wisata">
+        <div><h3>Bromo dan Malang</h3><p class="meta">2 hari 1 malam</p><p>Sunrise Bromo dan keliling Malang. Jeep dipesan terpisah atau ikut paket.</p><p class="inc">Termasuk: bus, penginapan, makan</p></div>
+        <div class="price">Rp 000.000<small>per orang</small></div>
+        <a class="btn" data-wa="Halo, saya mau tanya paket wisata Bromo dan Malang.">Tanya paket ini</a>
+      </div>
+      <div class="pkg-row" data-kat="wisata">
+        <div><h3>Yogyakarta dan Borobudur</h3><p class="meta">3 hari 2 malam</p><p>Keliling kota Yogyakarta, Borobudur, dan pusat oleh-oleh.</p><p class="inc">Termasuk: bus, penginapan, tiket masuk, makan</p></div>
+        <div class="price">Rp 000.000<small>per orang</small></div>
+        <a class="btn" data-wa="Halo, saya mau tanya paket wisata Yogyakarta.">Tanya paket ini</a>
+      </div>
+      <div class="pkg-row" data-kat="wisata">
+        <div><h3>Bali</h3><p class="meta">5 hari 4 malam</p><p>Perjalanan darat dengan bus dan penyeberangan ke Bali.</p><p class="inc">Termasuk: bus, penginapan, tiket penyeberangan, makan</p></div>
+        <div class="price">Rp 000.000<small>per orang</small></div>
+        <a class="btn" data-wa="Halo, saya mau tanya paket wisata Bali.">Tanya paket ini</a>
+      </div>
+      <div class="pkg-row" data-kat="sewa">
+        <div><h3>Sewa bus untuk rombongan</h3><p class="meta">harian atau paket</p><p>Sudah punya rute sendiri? Kami sediakan bus dan sopir sesuai jarak dan lama sewa.</p><p class="inc">Termasuk: bus, sopir, BBM sesuai kesepakatan</p></div>
         <div class="price">Hubungi kami<small>harga per bus</small></div>
-        <a class="btn" data-wa="Halo, saya mau minta penawaran sewa bus rombongan.">Minta penawaran</a>
+        <a class="btn" data-wa="Halo, saya mau minta penawaran sewa bus rombongan.">Tanya paket ini</a>
       </div>
     </div>
   </div>
 </section>
+
+<section class="s alt" id="galeri">
+  <div class="wrap">
+    <h2>Galeri perjalanan</h2>
+    <p>Foto rombongan, bus, dan lokasi tujuan. Ketuk foto untuk memperbesar.</p>
+    <div class="gallery">
+      <figure class="g1"><img src="images/galeri-1.jpg" alt="Rombongan ziarah di makam wali" width="800" height="600" loading="lazy" decoding="async" onerror="this.remove()"><figcaption>Rombongan ziarah di makam wali</figcaption></figure>
+      <figure class="g2"><img src="images/galeri-2.jpg" alt="Armada bus kami" width="800" height="600" loading="lazy" decoding="async" onerror="this.remove()"><figcaption>Armada bus kami</figcaption></figure>
+      <figure class="g3"><img src="images/galeri-3.jpg" alt="Wisata keluarga di Malang" width="800" height="600" loading="lazy" decoding="async" onerror="this.remove()"><figcaption>Wisata keluarga di Malang</figcaption></figure>
+      <figure class="g4"><img src="images/galeri-4.jpg" alt="Sunrise di Bromo" width="800" height="600" loading="lazy" decoding="async" onerror="this.remove()"><figcaption>Sunrise di Bromo</figcaption></figure>
+      <figure class="g5"><img src="images/galeri-5.jpg" alt="Istirahat dan makan bersama" width="800" height="600" loading="lazy" decoding="async" onerror="this.remove()"><figcaption>Istirahat dan makan bersama</figcaption></figure>
+      <figure class="g6"><img src="images/galeri-6.jpg" alt="Rombongan di Yogyakarta" width="800" height="600" loading="lazy" decoding="async" onerror="this.remove()"><figcaption>Rombongan di Yogyakarta</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<dialog id="lightbox" aria-label="Foto diperbesar">
+  <form method="dialog"><button class="lb-close" aria-label="Tutup">×</button></form>
+  <img alt="" id="lb-img"><p id="lb-cap"></p>
+</dialog>
 
 <section class="s alt">
   <div class="wrap">
