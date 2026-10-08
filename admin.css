@@ -1,0 +1,29 @@
+.adm{padding-bottom:48px}
+.adm .wrap{padding-top:20px;max-width:760px}
+.adm h1{font-size:1.7rem;margin-bottom:8px}
+.adm h2{font-size:1.25rem;margin:28px 0 12px}
+.adm-top{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:16px}
+#who{font-size:.85rem;color:var(--muted);margin-right:8px;word-break:break-all}
+.btn.small{padding:8px 14px;min-height:40px;font-size:.9rem}
+.btn.ghost{color:var(--ink)}
+.panel{background:var(--sky);border:1px solid var(--line);border-radius:14px;padding:18px;margin:16px 0;display:grid;gap:14px}
+.panel label{display:grid;gap:4px;font-weight:600;font-size:.9rem}
+.panel textarea,.panel input,.panel select{font:inherit;font-size:16px;padding:11px 12px;border:1.5px solid #B7CBD6;border-radius:8px;background:#fff;color:#0A2540;width:100%}
+.panel .check{display:flex;align-items:center;gap:10px;min-height:48px;font-weight:600}
+.panel .check input{width:22px;height:22px;flex:0 0 auto}
+.actions{display:flex;gap:10px;flex-wrap:wrap}
+.actions .btn{flex:1 1 140px}
+.poster-box{display:grid;gap:10px}
+#p-prev{max-width:200px;max-height:260px;border-radius:10px;border:1px solid var(--line);justify-self:start}
+#msg,#login-msg{min-height:1.4em;margin:0}
+.err{color:#B3261E}.ok{color:#1B7F3B}
+.adm-list{display:grid;gap:12px}
+.item{display:grid;grid-template-columns:72px 1fr;gap:12px;padding:12px;border:1px solid var(--line);border-radius:12px;background:var(--paper)}
+.item .th{width:72px;height:96px;border-radius:8px;background:var(--sky);object-fit:cover;display:block}
+.item h3{font-size:1.05rem;margin-bottom:2px}
+.item p{margin:0;font-size:.9rem;color:var(--muted)}
+.badge{display:inline-block;font-size:.75rem;font-weight:700;padding:2px 8px;border-radius:999px;background:#D7F0DF;color:#14532D;margin-left:6px}
+.badge.off{background:#EEE;color:#555}
+.item .acts{grid-column:1/-1;display:flex;gap:8px;flex-wrap:wrap}
+.item .acts .btn{padding:8px 14px;min-height:44px;font-size:.9rem}
+.btn.danger{background:transparent;border:2px solid #B3261E;color:#B3261E}

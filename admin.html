@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0A2540">
+<title>Dashboard Paket | JBK</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="admin.css">
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
+<script src="config.js" defer></script>
+<script src="supabase-config.js" defer></script>
+<script src="admin.js" defer></script>
+</head>
+<body class="adm">
+
+<main class="wrap" id="login" hidden>
+  <h1>Dashboard JBK</h1>
+  <form id="login-form" class="panel">
+    <label>Email<input id="l-email" type="email" autocomplete="username" required></label>
+    <label>Password<input id="l-pass" type="password" autocomplete="current-password" required></label>
+    <button class="btn" type="submit">Masuk</button>
+  </form>
+  <p id="login-msg" role="status"></p>
+</main>
+
+<main class="wrap" id="app" hidden>
+  <header class="adm-top">
+    <h1>Paket JBK</h1>
+    <div><span id="who"></span> <button class="btn ghost small" id="logout" type="button">Keluar</button></div>
+  </header>
+
+  <button class="btn" id="new" type="button">+ Tambah paket</button>
+
+  <form id="editor" class="panel" hidden>
+    <h2 id="editor-title">Paket baru</h2>
+
+    <div class="poster-box">
+      <img id="p-prev" alt="" hidden>
+      <label>Poster paket (foto atau gambar)
+        <input id="f-poster" type="file" accept="image/*">
+      </label>
+      <label class="check" id="del-wrap" hidden><input id="f-hapusposter" type="checkbox"> Hapus poster yang sekarang</label>
+    </div>
+
+    <label>Nama paket<input id="f-nama" required maxlength="120" placeholder="Contoh: Ziarah Wali Songo 3 hari"></label>
+    <label>Kategori
+      <select id="f-kat">
+        <option value="ziarah">Ziarah wali</option>
+        <option value="wisata">Wisata bus</option>
+        <option value="sewa">Sewa bus</option>
+      </select>
+    </label>
+    <label>Durasi<input id="f-durasi" maxlength="60" placeholder="3 hari 2 malam"></label>
+    <label>Rute atau deskripsi<textarea id="f-rute" rows="4" maxlength="600" placeholder="Tempat yang dikunjungi, titik jemput, jadwal singkat"></textarea></label>
+    <label>Fasilitas yang termasuk<input id="f-inc" maxlength="200" placeholder="bus, penginapan, makan, pembimbing"></label>
+    <div class="row2">
+      <label>Harga (angka saja)<input id="f-harga" type="number" inputmode="numeric" min="0" step="1000" placeholder="Kosongkan = Hubungi kami"></label>
+      <label>Satuan harga<input id="f-ket" maxlength="40" value="per orang"></label>
+    </div>
+    <div class="row2">
+      <label>Urutan (kecil tampil dulu)<input id="f-urut" type="number" inputmode="numeric" value="0"></label>
+      <label class="check"><input id="f-aktif" type="checkbox" checked> Tampilkan di website</label>
+    </div>
+    <div class="actions">
+      <button class="btn" type="submit" id="save">Simpan</button>
+      <button class="btn ghost" type="button" id="cancel">Batal</button>
+    </div>
+    <p id="msg" role="status"></p>
+  </form>
+
+  <h2>Daftar paket</h2>
+  <div id="list" class="adm-list"></div>
+</main>
+
+</body>
+</html>
